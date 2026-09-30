@@ -1,0 +1,113 @@
+#66号决议，判断文化基础接受度小于4，之后扔进去
+
+066_decision = {
+	is_shown = {
+		always = yes
+	}
+
+	possible = {
+		owner = {
+			is_player = yes 
+			NOT = { has_law = law_type:law_racial_segregation }
+			NOT = { has_law = law_type:law_cultural_exclusion }
+			NOT = { has_law = law_type:law_multicultural }
+			NOT = { has_law = law_type:law_subjecthood }
+		}
+		any_scope_culture = { 
+			ROOT = {
+				cultural_acceptance_base = { target = prev value < acceptance_status_4 }
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+
+	when_taken = {
+		change_infamy = 10
+		add_treasury = -50000
+		every_scope_pop = {
+			limit = {
+				total_size < 3000
+				state = {
+					state_cultural_acceptance = {
+						target = PREV.culture
+						value < acceptance_status_4
+					}
+				}
+			}
+			change_poptype = pop_type:delicious
+		}
+		every_scope_pop = {
+			limit = {
+				total_size < 3000
+				state = {
+					state_cultural_acceptance = {
+						target = PREV.culture
+						value < acceptance_status_4
+					}
+				}
+			}
+			move_pop = root.capital
+		}
+		capital = {
+			create_building={
+				building="building_gulag_logging"
+				level=1
+				reserves=1
+			}
+		}
+		capital = {
+			kill_population_percent_in_state = {
+				percent = 1
+				pop_type = delicious
+			}
+		}
+	}
+}
+
+067_decision = {
+	is_shown = {
+		always = yes
+	}
+
+	possible = {
+		every_scope_pop = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {
+						target = PREV.culture
+					   	value > acceptance_status_3
+				   	}
+				}
+				is_pop_type = delicious
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+
+	when_taken = {
+		add_treasury = -5000
+		every_scope_pop = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {
+						target = PREV.culture
+					   	value > acceptance_status_3
+				   	}
+				}
+				is_pop_type = delicious
+			}
+			change_poptype = pop_type:laborers
+			set_pop_wealth = {
+				wealth_distribution = {
+					value = 10
+				}
+			}
+		}
+	}
+}
