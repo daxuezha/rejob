@@ -4,7 +4,7 @@ pm_Auschviking_shao = {
 	building_modifiers = {
 		workforce_scaled = {
 		goods_input_coal_add = 200
-		goods_output_porcelain_add = 750
+		goods_output_porcelain_add = 500
 		}
 		level_scaled = {
 		}
@@ -18,12 +18,6 @@ pm_Auschviking_shao = {
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 1500
-			#state_mortality_mult = 1000
-			#state_standard_of_living_add = -2
-	        state_turmoil_effects_mult = 1
-		}
 		unscaled = {
 			state_delicious_mortality_mult = 4
 		}
@@ -37,7 +31,7 @@ pm_gulag = {
 		workforce_scaled = {
 		goods_input_ammunition_add = 100
 		goods_input_small_arms_add = 100
-		goods_output_meat_add = 750
+		goods_output_meat_add = 4000
 		}
 		level_scaled = {
 		}
@@ -47,12 +41,6 @@ pm_gulag = {
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 500
-			#state_mortality_mult = 1000
-			#state_standard_of_living_add = -1
-	        state_turmoil_effects_mult = 2
-		}
 		unscaled = {
 			state_delicious_mortality_mult = 4
 		}
@@ -67,7 +55,7 @@ pm_gulag_oil = {
 		goods_input_tools_add = 25
 		goods_input_electricity_add = 150
 		goods_input_engines_add = 25
-		goods_output_oil_add = 800
+		goods_output_oil_add = 2000
 		}
 		level_scaled = {
 		}
@@ -83,12 +71,6 @@ pm_gulag_oil = {
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 2000
-			#state_mortality_mult = 1000
-			#state_standard_of_living_add = -2
-	        state_turmoil_effects_mult = 1
-		}
 		unscaled = {
 			state_delicious_mortality_mult = 4
 		}
@@ -114,12 +96,6 @@ pm_Auschviking_gas = {
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 2000
-			#state_mortality_mult = 1000
-			#state_standard_of_living_add = -10
-	        state_turmoil_effects_mult = 2
-		}
 		unscaled = {
 			state_delicious_mortality_mult = 400
 		}
@@ -151,13 +127,8 @@ pm_Auschviking_gasking = {
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
-		}
 		unscaled = {
-			state_standard_of_living_add = -100
-			state_pollution_generation_add = 5000
 			state_mortality_mult = 9999999
-	        state_turmoil_effects_mult = 5
 		}
 	}
 }
@@ -207,7 +178,6 @@ pm_Auschviking_barbed_wire_fences = {
 		}
 		unscaled = {
 #			building_delicious_mortality_mult = 8
-			building_group_gulag_industry_standard_of_living_add = -50
 		}
 	}
 	
@@ -237,7 +207,6 @@ pm_Auschviking_electric_fencing = {
 		}
 		unscaled = {
 #			building_delicious_mortality_mult = 14
-			building_group_gulag_industry_standard_of_living_add = -50
 			
 		}
 	}
@@ -266,7 +235,6 @@ pm_gulag_labour = {
 		}
 		unscaled = {
 #			building_delicious_mortality_mult = 1
-			building_group_gulag_industry_standard_of_living_add = -50
 		}
 	}
 
@@ -313,10 +281,6 @@ pm_gulag_upper = {
 	country_modifiers = {
 		workforce_scaled = {
 		}
-		unscaled = {
- 	 	 	interest_group_ig_industrialists_approval_add = -10
-			interest_group_ig_landowners_approval_add = -10
-		}
 	}
 }
 
@@ -346,10 +310,6 @@ pm_gulag_local = {
 	country_modifiers = {
 		workforce_scaled = {
 		}
-		unscaled = {
-			country_infamy_generation_mult = 0.1
-			country_infamy_decay_mult = -0.1
-		}
 	}
 }
 
@@ -377,10 +337,6 @@ pm_gulag_country = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-		}
-		unscaled = {
-			country_infamy_generation_mult = 0.1
-			country_infamy_decay_mult = -0.1
 		}
 	}
 }
