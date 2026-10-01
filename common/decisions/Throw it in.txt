@@ -8,10 +8,6 @@
 	possible = {
 		owner = {
 			is_player = yes 
-			NOT = { has_law = law_type:law_racial_segregation }
-			NOT = { has_law = law_type:law_cultural_exclusion }
-			NOT = { has_law = law_type:law_multicultural }
-			NOT = { has_law = law_type:law_subjecthood }
 		}
 		any_scope_culture = { 
 			ROOT = {
