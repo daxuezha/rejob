@@ -1,13 +1,22 @@
 {
-  "name": "再就业中心2.0",
+  "name": "再就业中心2.0 - 个人优化补丁",
   "id": "",
   "version": "1.0.0",
   "supported_game_version": "1.13.*",
-  "short_description": "维多利亚3再就业中心模组：调整建筑限制、生产方式及附带效果。",
+  "short_description": "面向“再就业中心2.0”的个人优化补丁：调整建筑限制与生产方式效果；需与原模组同时启用。",
+  "picture": "thumbnail.png",
   "tags": [
     "Gameplay"
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "rel_type": "dependency",
+      "id": "3266813717",
+      "display_name": "再就业中心2.0",
+      "resource_type": "mod",
+      "version": "*"
+    }
+  ],
   "game_custom_data": {
     "multiplayer_synchronized" : true
   }
