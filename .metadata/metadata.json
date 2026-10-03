@@ -1,12 +1,14 @@
 {
-  "name" : "再就业中心2.0",
-  "id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
-  "tags" : [],
-  "relationships" : [],
-  "game_custom_data" : {
+  "name": "再就业中心2.0",
+  "id": "",
+  "version": "1.0.0",
+  "supported_game_version": "1.13.*",
+  "short_description": "维多利亚3再就业中心模组：调整建筑限制、生产方式及附带效果。",
+  "tags": [
+    "Gameplay"
+  ],
+  "relationships": [],
+  "game_custom_data": {
     "multiplayer_synchronized" : true
   }
 }
